@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MMh-PROJEKT</title>
+	<meta charset="UTF-8">
+	<script src="./scripts/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="./scripts/SimulatedAnnealing.js"></script>
+	<script type="text/javascript" src="./scripts/tsp.js"></script>
+	<script type="text/javascript" src="scripts/GeneticAlgorithm.js"></script>
+	<script type="text/javascript" src="./scripts/index.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/index.css" />
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,bold' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+</head>
+	
+
+<body>
+	<div>
+		<div id="switch">
+			<ul>
+				<li id="SA">Simulated Annealing</li>
+				<li id="GA">Genetic Algorithm</li>
+			</ul>
+		</div>
+		<div id="settingsSA">
+			<h2>Simulated Annealing</h2>
+			<h2><i class="fa fa-cog"></i> SETTINGS</h2>			
+			<table>
+				<tbody>
+					<tr>
+						<td>Cities</td>
+						<td>
+						<input type="text" id="cities" value="20" readonly></input>
+						</td>
+					</tr>
+					<tr>
+						<td>Initial Temperature</td>
+						<td>
+						<input type="text" id="temperature" value="1000"></input>
+						</td>
+					</tr>
+					<tr>
+						<td>Absolute Zero</td>
+						<td>
+						<input type="text" id="abszero" value=".0001"></input>
+						</td>
+					</tr>
+					<tr>
+						<td>Cooling Rate</td>
+						<td>
+						<input type="text" id="coolrate" value="0.003"></input>
+						</td>
+					</tr>
+					<tr>
+						<td>Maximum iterations</td>
+						<td>
+						<input type="text" id="numberOfIterations" value="100"></input>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div style="margin: 15px auto; width: 100px; border: 1px solid black;">
+				<button id="solveSA">Solve</button>
+			</div>
+		</div>
+		<div id="settingsGA">
+			<h2>Genetic Algoritm<h2>
+			<h2><i class="fa fa-cog"></i> SETTINGS</h2>
+			<table>
+				<tbody>
+					<tr>
+						<td>Cities</td>
+						<td>
+						<input type="text" id="cities" value="20" readonly></input>
+						</td>
+					</tr>
+					<tr>
+						<td>Population</td>
+						<td>
+						<input type="text" id="population" value="50"></input>
+						</td>
+					</tr>
+					<tr>
+						<td>Generations</td>
+						<td>
+						<input type="text" id="generations" value="100"></input>
+						</td>
+					</tr>
+					<tr>
+						<td>Mutation rate</td>
+						<td>
+						<input type="text" id="mutationRate" value="0.015"></input>
+						</td>
+					</tr>
+					<tr>
+						<td>Tournament size</td>
+						<td>
+						<input type="text" id="tournamentSize" value="5"></input>
+						</td>
+					</tr>	
+				</tbody>
+			</table>
+			<div style="margin: 15px auto; width: 100px; border: 1px solid black;">
+				<button id="solveGA">Solve</button>
+			</div>
+		</div>
+		<div id="solution">
+			<h2 id="name"><h2>
+			<table>
+				<tbody>
+					<tr>
+						<td id="distance"></td>
+					</tr>
+					<tr>
+						<td id="time"></td>
+					</tr>
+					<br>
+					<tr>
+						<td id="tour"></td>
+					</tr>	
+				</tbody>
+			</table>
+		</div>
+		<canvas id="tsp-canvas" width="700" height="600">
+			HTML5 Unsupported.
+		</canvas>
+	</div>
+</body>
+</html>

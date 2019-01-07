@@ -1,0 +1,84 @@
+#tsp-canvas
+{
+	border: 2px solid black;
+	border-radius: 3px;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+
+#settingsSA, #settingsGA
+{
+	font-family: 'Lato', sans-serif;
+	border: 1px solid black;
+	float: left;
+	padding: 10px;
+	top: 45px;
+	left: 15px;
+	position: absolute;
+	border-radius: 2px;
+}
+
+#solveGA, #solveSA
+{
+	background-color: #2E5894;
+	border: none;
+	padding: 5px 7px 5px 7px;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	color: white;
+	border-radius: 1px;
+	width: 100px;
+}
+
+#switch ul li
+{
+	
+	display: inline;
+	padding: 10px;
+	top: 45px;
+	left: 15px;
+	background: #ccc;
+	
+}
+#switch ul li:hover
+{
+	cursor: default;
+	box-sizing: border-box;
+	border: 2px solid #262626;
+	
+	
+}
+#switch ul li:nth-child(1)
+{
+	background: #f6e58d;
+}
+#switch ul li:nth-child(2)
+{
+	background: #ff7979;
+}
+#solution
+{
+	font-family: 'Lato', sans-serif;
+	
+	float: left;
+	padding: 10px;
+	top: 450px;
+	left: 15px;
+	position: absolute;
+	
+}
+
+table
+{
+	margin-left: 15px;
+	margin-top: 15px;
+	padding-top: 10px;
+}
+
+#solution td
+{
+	padding: 5px;
+	font-size:medium;
+}
