@@ -1,5 +1,5 @@
 
-var cities = ["Madryt", "Lizbona", "Barcelona", "Paryż", "Kopenhaga", "Warszawa", "Ateny", "Istambuł", "Amsterdam", "Oslo", "Sztokholm", "Helsinki", "Moskwa", "Rzym", "Bukareszt", "Monako", "Praga", "Gdynia", "Zagrzeb", "Berno"];
+var cities = ["Madryt", "Lizbona", "Barcelona", "Paryż", "Kopenhaga", "Warszawa", "Ateny", "Stambuł", "Amsterdam", "Oslo", "Sztokholm", "Helsinki", "Moskwa", "Rzym", "Bukareszt", "Monako", "Praga", "Gdynia", "Zagrzeb", "Berno"];
 var amount = 20;
 var distances = new Array(amount);
 
