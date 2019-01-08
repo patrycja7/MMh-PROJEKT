@@ -48,9 +48,9 @@ for(var i = 0; i < kt; i++){
         
         if (currentSolution.getTotalDistance() < best.getTotalDistance()) {      
             best = new Tour(currentSolution.getTour()); 
-            console.log(best.getTotalDistance()); // do not remove me. Ever.
+            console.log(best.getTotalDistance()); 
         }
-        Tmax *= 1 -coolingRate//1 -coolingRate; // tem *=colrate
+        Tmax *= 1 -coolingRate;
     }
     else
     {
